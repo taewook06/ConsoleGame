@@ -1,45 +1,26 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
-      "G-project2/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "compile": {
-          "bin/placeholder/G-project2.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/G-project2.dll": {}
-        }
-      }
-    }
+    ".NETCoreApp,Version=v3.1": {}
   },
-  "libraries": {
-    "G-project2/1.0.0": {
-      "type": "project",
-      "path": "../G-project2/G-project2.csproj",
-      "msbuildProject": "../G-project2/G-project2.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
-      "G-project2 >= 1.0.0"
-    ]
+    ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\happy\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\happy\\Desktop\\G-project\\G-project\\G-project1.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\Game-project\\G-project1\\G-project1.csproj",
       "projectName": "G-project1",
-      "projectPath": "C:\\Users\\happy\\Desktop\\G-project\\G-project\\G-project1.csproj",
-      "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\happy\\Desktop\\G-project\\G-project\\obj\\",
+      "projectPath": "C:\\Users\\admin\\Desktop\\Game-project\\G-project1\\G-project1.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\Game-project\\G-project1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\happy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -52,11 +33,7 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {
-            "C:\\Users\\happy\\Desktop\\G-project\\G-project2\\G-project2.csproj": {
-              "projectPath": "C:\\Users\\happy\\Desktop\\G-project\\G-project2\\G-project2.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

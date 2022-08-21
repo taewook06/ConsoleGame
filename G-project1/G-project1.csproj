@@ -3,11 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>G_project</RootNamespace>
+    <RootNamespace>G_project1</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\G-project2\G-project2.csproj" />
-  </ItemGroup>
 
 </Project>

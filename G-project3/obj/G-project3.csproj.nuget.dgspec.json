@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\happy\\Desktop\\G-project\\G-project3\\G-project3.csproj": {}
+    "C:\\Users\\admin\\Desktop\\Game-project\\G-project3\\G-project3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\happy\\Desktop\\G-project\\G-project3\\G-project3.csproj": {
+    "C:\\Users\\admin\\Desktop\\Game-project\\G-project3\\G-project3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\happy\\Desktop\\G-project\\G-project3\\G-project3.csproj",
+        "projectUniqueName": "C:\\Users\\admin\\Desktop\\Game-project\\G-project3\\G-project3.csproj",
         "projectName": "G-project3",
-        "projectPath": "C:\\Users\\happy\\Desktop\\G-project\\G-project3\\G-project3.csproj",
-        "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\happy\\Desktop\\G-project\\G-project3\\obj\\",
+        "projectPath": "C:\\Users\\admin\\Desktop\\Game-project\\G-project3\\G-project3.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\admin\\Desktop\\Game-project\\G-project3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\happy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
