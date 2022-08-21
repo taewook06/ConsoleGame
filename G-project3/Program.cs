@@ -232,6 +232,7 @@ namespace G_project3
                             Clear();
                             ForegroundColor = ConsoleColor.Black;
                             WriteLine($"아쉽지만, {MathPoint}으로 불합격입니다.");
+                            Thread.Sleep(5000);
 
                             // Chance -= 1; << 여기서는 애초에 Chance가 없어서 더 안되는...
                             StartPlayer();
@@ -265,7 +266,7 @@ namespace G_project3
 
                         case 1:
                             WriteLine("▲");     //C에 만약 1인 담긴다면, ▲가 출력되고, 플레이어가 UpArrow키를 누르면 1점획득
-                            ConsoleKeyInfo key1 = Console.ReadKey(true);
+                            ConsoleKeyInfo key1 = Console.ReadKey(true); 
                             switch (key1.Key)
                             {
                                 case ConsoleKey.UpArrow:
@@ -364,7 +365,7 @@ namespace G_project3
                             Clear();
                             ForegroundColor = ConsoleColor.White;
                             WriteLine($"아쉽지만, {SpeedPoint}으로 불합격입니다.");
-
+                            Thread.Sleep(5000);
                             // Chance -= 1; << 똑같이 필요
                             StartPlayer();
                         }
@@ -394,13 +395,15 @@ namespace G_project3
 
                     WriteLine($"C:{M3}");
                     Thread.Sleep(5000);
-                    //위에 C 지우는 코드 필요                                                            
+                    //위에 C 지우는 코드 필요
+                    
+                   
 
-                    string RandABC = random.Next("A","B","C"); // 랜덤으로 A,B,C 받기
+                    float RandABC = random.Next(1,4); // 랜덤으로 1,2,3 받기
 
                     switch(RandABC)
                     {
-                        case "A":
+                        case  1:
                             WriteLine("A는 몇인가요?");
                             float ARead = 0;
                             ARead = float.Parse(ReadLine());
@@ -414,11 +417,12 @@ namespace G_project3
                                 Clear();
                                 ForegroundColor = ConsoleColor.DarkYellow;
                                 WriteLine("아쉽지만, 다음기회에...");
+                                Thread.Sleep(5000);
                                 //Chance -=1   <<필요
                                 StartPlayer();
                             }
                             break;
-                        case "B":
+                        case  2:
                              WriteLine("B는 몇인가요?");
                             float BRead = 0;
                             BRead = float.Parse(ReadLine());
@@ -432,11 +436,12 @@ namespace G_project3
                                 Clear();
                                 ForegroundColor = ConsoleColor.DarkYellow;
                                 WriteLine("아쉽지만, 다음기회에...");
+                                Thread.Sleep(5000);
                                 //Chance -=1   <<필요
                                 StartPlayer();
                             }
                             break;
-                        case"C":  
+                        case 3:  
                             WriteLine("C는 몇인가요?");
                             float CRead = 0;
                             CRead = float.Parse(ReadLine());
@@ -450,6 +455,7 @@ namespace G_project3
                                 Clear();
                                 ForegroundColor = ConsoleColor.DarkYellow;
                                 WriteLine("아쉽지만, 다음기회에...");
+                                Thread.Sleep(5000);
                                 //Chance -=1   <<필요
                                 StartPlayer();
                             }
@@ -461,7 +467,7 @@ namespace G_project3
                 Console.BackgroundColor = ConsoleColor.Yellow;
                 Clear();
                 ForegroundColor = ConsoleColor.Black;
-                WriteLine("축하합니다! 당신은 우영우 변호사보다 기억력이 좋은 대형로펌 변호사가 되었습니다.");
+                WriteLine("축하합니다! 당신은 우영우 변호사보다 기억력이 좋은 대형로펌의 변호사가 되었습니다.");
                 //게임종료
 
             }
