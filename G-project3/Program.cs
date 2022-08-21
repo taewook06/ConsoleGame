@@ -150,7 +150,7 @@ namespace G_project3
 
                     break;
                 case 4:
-                    //LuckColor();  <<0.3초마다 바뀌는 색상 , 탈출을 못해서 오류
+                   
                     WriteLine("[로또] 1~10까지 행운을 뽑으시오.");
 
                     float Luck = 0;
@@ -158,6 +158,15 @@ namespace G_project3
 
                     Random random = new Random();
                     int RandLuck = random.Next(1, 11);
+
+                    LuckColor(); // <<0.3초마다 바뀌는 색상 , 바뀌는 도중에 코드 실행을 하고 싶었으나, 오류
+
+                    
+                    Console.BackgroundColor = ConsoleColor.White;
+                    Clear();
+                    ForegroundColor = ConsoleColor.Black;
+
+                    Thread.Sleep(2000);
 
                     if (Luck == RandLuck)
                     {
@@ -524,15 +533,10 @@ namespace G_project3
 
             ConsoleColor[] Color = {ConsoleColor.Red,ConsoleColor.Green,ConsoleColor.Yellow
             ,ConsoleColor.White , ConsoleColor.DarkGray,ConsoleColor.Blue}; //배경색과 폰트색을 랜덤하게 바꿀 색상들
-
-            while (true)
+            for (byte i = 0; i < 10; i++)
             {
                 Console.Clear();
-                for (byte i = 0; i < 20; i++)
-                {
-                    Console.ForegroundColor = Color[Rand.Next(6)]; //0~5까지의 랜덤한 색상으로 폰트색변경                                                      
-
-                }
+                
                 Console.BackgroundColor = Color[Rand.Next(6)]; //0~5까지의 랜덤한 색상으로 배경색변경
                 Thread.Sleep(200); //0.2초대기
             }
