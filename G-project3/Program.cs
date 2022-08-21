@@ -12,6 +12,8 @@ namespace G_project3
     //          총 4개의 선택지가 있고 테스트가 미니게임식으로 진행됩니다.
     class Program
     {
+        public static float Chance = 3;
+
         static IntPtr ConsoleWindowHnd = GetForegroundWindow(); //타이머를 쓰기 위한 코드
         [DllImport("user32.dll")]
         static extern IntPtr GetForegroundWindow();
@@ -68,7 +70,7 @@ namespace G_project3
             Clear();
             ForegroundColor = ConsoleColor.Yellow;
 
-            float Chance = 3; //지원서 
+             //지원서 
 
             if (Chance == 0)  //지원서가 0장이면 지원을 못하므로 게임 패배.
             {
@@ -153,11 +155,11 @@ namespace G_project3
                    
                     WriteLine("[로또] 1~10까지 행운을 뽑으시오.");
 
-                    float Luck = 0;
-                    Luck = float.Parse(ReadLine());
+                    int Luck = 0;
+                    Luck = int.Parse(ReadLine());
 
                     Random random = new Random();
-                    int RandLuck = random.Next(1, 11);
+                    int RandLuck = random.Next(1, 2);
 
                     LuckColor(); // <<0.3초마다 바뀌는 색상 , 바뀌는 도중에 코드 실행을 하고 싶었으나, 구현x
 
@@ -177,13 +179,17 @@ namespace G_project3
                         WriteLine("[당첨] 로또에 당첨되어 20억을 받고 돈많은 백수가 되었습니다!");
                         //게임종료 << 아직구현 x
                     }
-                    Console.BackgroundColor = ConsoleColor.Red;
-                    Clear();
-                    ForegroundColor = ConsoleColor.Yellow;
-                    WriteLine("아쉽지만, 다음기회에...");
-                    //Chance -= 1;    << 기회가 줄지않음 구현 x
-                    Thread.Sleep(2000);
-                    StartPlayer();
+                    else if(Luck != RandLuck)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Clear();
+                        ForegroundColor = ConsoleColor.Yellow;
+                        WriteLine("아쉽지만, 다음기회에...");
+                        Chance -= 1;    //<< 기회가 줄지않음 구현 x
+                        Thread.Sleep(2000);
+                        StartPlayer();
+                    }
+                   
                     break;
 
                 default:
@@ -270,7 +276,7 @@ namespace G_project3
                             WriteLine($"아쉽지만, {MathPoint}점으로 불합격입니다.");
                             Thread.Sleep(5000);
 
-                            // Chance -= 1; << 아직구현 x
+                             Chance -= 1;//<< 아직구현 x
                             StartPlayer();
                         }
 
@@ -402,7 +408,7 @@ namespace G_project3
                             ForegroundColor = ConsoleColor.White;
                             WriteLine($"아쉽지만, {SpeedPoint}으로 불합격입니다.");
                             Thread.Sleep(5000);
-                            // Chance -= 1; << 똑같이 필요 아직구현 x
+                            Chance -= 1; //<< 똑같이 필요 아직구현 x
                             StartPlayer();
                         }
 
@@ -425,7 +431,7 @@ namespace G_project3
                     WriteLine(" ");
                     WriteLine($"A:{M1}");
                     Thread.Sleep(5000);
-                    Clear();        //위에 A 지우는 코드
+                    Clear();        //위에 A지우는 코드
 
                     WriteLine(" ");
                     WriteLine($"B:{M2}");
@@ -441,8 +447,7 @@ namespace G_project3
                     float RandABC = random.Next(1, 4); // 랜덤으로 1,2,3 받기
 
 
-
-                    switch (RandABC)
+                    switch (RandABC) 
                     {
                         case 1:
                             WriteLine("A는 몇인가요?");
@@ -461,7 +466,7 @@ namespace G_project3
                                 WriteLine(" ");
                                 WriteLine("아쉽지만, 다음기회에...");
                                 Thread.Sleep(5000);
-                                //Chance -=1   <<아직구현 x
+                                Chance -= 1; //  <<아직구현 x
                                 StartPlayer();
                             }
                             break;
@@ -482,7 +487,7 @@ namespace G_project3
                                 WriteLine(" ");
                                 WriteLine("아쉽지만, 다음기회에...");
                                 Thread.Sleep(5000);
-                                //Chance -=1   <<아직구현 x
+                                Chance -= 1;   //<<아직구현 x
                                 StartPlayer();
                             }
                             break;
@@ -503,7 +508,7 @@ namespace G_project3
                                 WriteLine(" ");
                                 WriteLine("아쉽지만, 다음기회에...");
                                 Thread.Sleep(5000);
-                                //Chance -=1   <<아직구현 x
+                                Chance -= 1;  // <<아직구현 x
                                 StartPlayer();
                             }
                             break;
