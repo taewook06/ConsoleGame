@@ -12,7 +12,7 @@ namespace G_project3
     //          총 4개의 선택지가 있고 테스트가 미니게임식으로 진행됩니다.
     class Program
     {
-        public static float Chance = 3;
+        public static float Chance = 3; //지원서 
 
         static IntPtr ConsoleWindowHnd = GetForegroundWindow(); //타이머를 쓰기 위한 코드
         [DllImport("user32.dll")]
@@ -70,7 +70,7 @@ namespace G_project3
             Clear();
             ForegroundColor = ConsoleColor.Yellow;
 
-             //지원서 
+            
 
             if (Chance == 0)  //지원서가 0장이면 지원을 못하므로 게임 패배.
             {
@@ -79,7 +79,7 @@ namespace G_project3
                 ForegroundColor = ConsoleColor.Red;
 
                 WriteLine("[GAME OVER] 지원서 3장을 모두 사용하였지만, 안타깝게도 취직을 실패하였습니다.");
-                //게임종료 아직구현 x
+                return;
             }
 
 
@@ -96,7 +96,7 @@ namespace G_project3
             Thread.Sleep(500);
             WriteLine("[3] 변호사");
             Thread.Sleep(500);
-            WriteLine("[4] 10% 확률로 20억을 가진 백수가 됩니다.");
+            WriteLine("[4] 20% 확률로 10억을 가진 백수가 됩니다.");
             WriteLine(" ");
 
             float Hope = 0;
@@ -118,8 +118,6 @@ namespace G_project3
 
                     Math(); //연산테스트 
 
-
-
                     break;
                 case 2:
                     Console.BackgroundColor = ConsoleColor.DarkBlue;
@@ -129,10 +127,9 @@ namespace G_project3
                     Thread.Sleep(1000);
 
                     WriteLine(" ");
-                    WriteLine("[순발력테스트] 30초안에 주어진 문자를 60개 이상누를시 합격.");
+                    WriteLine("[순발력테스트] 30초안에 주어진 문자를 55개 이상누를시 합격.");
                     WriteLine("(5초뒤 테스트가 시작합니다)");
                     Thread.Sleep(5000);
-
 
                     Speed(); //순발력테스트
 
@@ -152,44 +149,9 @@ namespace G_project3
 
                     break;
                 case 4:
-                   
-                    WriteLine("[로또] 1~10까지 행운을 뽑으시오.");
 
-                    int Luck = 0;
-                    Luck = int.Parse(ReadLine());
+                    Lucky(); //로또                   
 
-                    Random random = new Random();
-                    int RandLuck = random.Next(1, 2);
-
-                    LuckColor(); // <<0.3초마다 바뀌는 색상 , 바뀌는 도중에 코드 실행을 하고 싶었으나, 구현x
-
-                    
-                    Console.BackgroundColor = ConsoleColor.White;
-                    Clear();
-                    ForegroundColor = ConsoleColor.Black;
-
-                    Thread.Sleep(2000);
-
-                    if (Luck == RandLuck)
-                    {
-                        Console.BackgroundColor = ConsoleColor.Yellow;
-                        Clear();
-                        ForegroundColor = ConsoleColor.Black;
-
-                        WriteLine("[당첨] 로또에 당첨되어 20억을 받고 돈많은 백수가 되었습니다!");
-                        //게임종료 << 아직구현 x
-                    }
-                    else if(Luck != RandLuck)
-                    {
-                        Console.BackgroundColor = ConsoleColor.Red;
-                        Clear();
-                        ForegroundColor = ConsoleColor.Yellow;
-                        WriteLine("아쉽지만, 다음기회에...");
-                        Chance -= 1;    //<< 기회가 줄지않음 구현 x
-                        Thread.Sleep(2000);
-                        StartPlayer();
-                    }
-                   
                     break;
 
                 default:
@@ -277,7 +239,7 @@ namespace G_project3
                             WriteLine($"아쉽지만, {MathPoint}점으로 불합격입니다.");
                             Thread.Sleep(5000);
 
-                             Chance -= 1;//<< 아직구현 x
+                             Chance -= 1;
                             StartPlayer();
                         }
 
@@ -289,7 +251,7 @@ namespace G_project3
 
 
             }
-            static void Speed() //프로게이머: 출력된 문자를 빠르게 쳐서 30초안에 60점이상넘기기
+            static void Speed() //프로게이머: 출력된 문자를 빠르게 쳐서 30초안에 55점이상넘기기
             {
                 float SpeedPoint = 0;
 
@@ -300,118 +262,112 @@ namespace G_project3
                 for (float SRound = 0; ; SRound++)
                 {
                     Random random = new Random();
-                    int C = random.Next(1, 9);
+                    int S = random.Next(1, 9);
 
-                    ConsoleKeyInfo kkkk;
+                    ConsoleKeyInfo Keys;
+                   
 
-
-                    switch (C)
+                    switch (S)
                     {
 
                         case 1:
-                            WriteLine("▲");     //C에 만약 1인 담긴다면, ▲가 출력되고, 플레이어가 UpArrow키를 누르면 1점획득
-                            kkkk = Console.ReadKey(true); //실패코드
-                            if(kkkk.Key == ConsoleKey.UpArrow)
+                            WriteLine("     ▲");     //C에 만약 1인 담긴다면, ▲가 출력되고, 플레이어가 UpArrow키를 누르면 1점획득
+                            WriteLine(" ");
+                            Keys = Console.ReadKey(true); 
+                            if(Keys.Key == ConsoleKey.UpArrow)
+                            {
+                                SpeedPoint += 1;
+                            }
+                            break;        
+
+
+                        case 2:
+                            WriteLine("     ▼");
+                            WriteLine(" ");
+                            Keys = Console.ReadKey(true);
+                            if (Keys.Key == ConsoleKey.DownArrow)
                             {
                                 SpeedPoint += 1;
                             }
                             break;
-
-
-                        case 2:
-                            WriteLine("▼");
-                            ConsoleKeyInfo key2 = Console.ReadKey(true); //실패코드
-                            switch (key2.Key)
-                            {
-                                case ConsoleKey.DownArrow:
-                                    SpeedPoint += 1;
-                                    break;
-                            }
-                            break;
                         case 3:
-                            WriteLine("◀");
-                            ConsoleKeyInfo key3 = Console.ReadKey(true); //실패코드
-                            switch (key3.Key)
+                            WriteLine("     ◀");
+                            WriteLine(" ");
+                            Keys = Console.ReadKey(true);
+                            if (Keys.Key == ConsoleKey.LeftArrow)
                             {
-                                case ConsoleKey.LeftArrow:
-                                    SpeedPoint += 1;
-                                    break;
+                                SpeedPoint += 1;
                             }
                             break;
                         case 4:
-                            WriteLine("▶");
-                            ConsoleKeyInfo key4 = Console.ReadKey(true); //실패코드
-                            switch (key4.Key)
+                            WriteLine("     ▶");
+                            WriteLine(" ");
+                            Keys = Console.ReadKey(true);
+                            if (Keys.Key == ConsoleKey.RightArrow)
                             {
-                                case ConsoleKey.RightArrow:
-                                    SpeedPoint += 1;
-                                    break;
+                                SpeedPoint += 1;
                             }
                             break;
                         case 5:
-                            WriteLine("𝐖");
-                            ConsoleKeyInfo key5 = Console.ReadKey(true); //실패코드
-                            switch (key5.Key)
+                            WriteLine("     W");
+                            WriteLine(" ");
+                            Keys = Console.ReadKey(true);
+                            if (Keys.Key == ConsoleKey.W)
                             {
-                                case ConsoleKey.W:
-                                    SpeedPoint += 1;
-                                    break;
+                                SpeedPoint += 1;
                             }
                             break;
                         case 6:
-                            WriteLine("𝐀");
-                            ConsoleKeyInfo key6 = Console.ReadKey(true); //실패코드
-                            switch (key6.Key)
+                            WriteLine("     A");
+                            WriteLine(" ");
+                            Keys = Console.ReadKey(true);
+                            if (Keys.Key == ConsoleKey.A)
                             {
-                                case ConsoleKey.A:
-                                    SpeedPoint += 1;
-                                    break;
+                                SpeedPoint += 1;
                             }
                             break;
                         case 7:
-                            WriteLine("𝐒");
-                            ConsoleKeyInfo key7 = Console.ReadKey(true); //실패코드
-                            switch (key7.Key)
+                            WriteLine("     S");
+                            WriteLine(" ");
+                            Keys = Console.ReadKey(true);
+                            if (Keys.Key == ConsoleKey.S)
                             {
-                                case ConsoleKey.S:
-                                    SpeedPoint += 1;
-                                    break;
+                                SpeedPoint += 1;
                             }
                             break;
                         case 8:
-                            WriteLine("𝐃");
-                            ConsoleKeyInfo key8 = Console.ReadKey(true); //실패코드
-                            switch (key8.Key)
+                            WriteLine("     D");
+                            WriteLine(" ");
+                            Keys = Console.ReadKey(true);
+                            if (Keys.Key == ConsoleKey.D)
                             {
-                                case ConsoleKey.D:
-                                    SpeedPoint += 1;
-                                    break;
+                                SpeedPoint += 1;
                             }
                             break;
                     }
                     if (isTimeOut == true) //시간이 다됐는지 확인
                     {
                         Thread.Sleep(1000);
-                        if (SpeedPoint >= 60)
+                        if (SpeedPoint >= 55)
                         {
                             Console.BackgroundColor = ConsoleColor.Yellow;
                             Clear();
-                            ForegroundColor = ConsoleColor.White;
+                            ForegroundColor = ConsoleColor.Black;
                             WriteLine($"축하합니다! {SpeedPoint}점으로 합격입니다.");
                             WriteLine(" ");
                             Thread.Sleep(1000);
                             WriteLine("당신은 페이커보다 반응속도가 좋은 프로게이머가 됐습니다.");
-                            
-                            //게임종료 아직구현 x
+
+                            return;
                         }
-                        else if (SpeedPoint < 60)
+                        else if (SpeedPoint < 55)
                         {
                             Console.BackgroundColor = ConsoleColor.Red;
                             Clear();
                             ForegroundColor = ConsoleColor.White;
                             WriteLine($"아쉽지만, {SpeedPoint}으로 불합격입니다.");
                             Thread.Sleep(5000);
-                            Chance -= 1; //<< 똑같이 필요 아직구현 x
+                            Chance -= 1; 
                             StartPlayer();
                         }
 
@@ -429,7 +385,7 @@ namespace G_project3
                     int M1 = random.Next(10000000, 99999999);
                     int M2 = random.Next(10000000, 99999999);
                     int M3 = random.Next(10000000, 99999999);
-                    Clear();
+                    Clear(); 
 
                     WriteLine(" ");
                     WriteLine($"A:{M1}");
@@ -469,7 +425,7 @@ namespace G_project3
                                 WriteLine(" ");
                                 WriteLine("아쉽지만, 다음기회에...");
                                 Thread.Sleep(5000);
-                                Chance -= 1; //  <<아직구현 x
+                                Chance -= 1; // 
                                 StartPlayer();
                             }
                             break;
@@ -490,7 +446,7 @@ namespace G_project3
                                 WriteLine(" ");
                                 WriteLine("아쉽지만, 다음기회에...");
                                 Thread.Sleep(5000);
-                                Chance -= 1;   //<<아직구현 x
+                                Chance -= 1;  
                                 StartPlayer();
                             }
                             break;
@@ -511,7 +467,7 @@ namespace G_project3
                                 WriteLine(" ");
                                 WriteLine("아쉽지만, 다음기회에...");
                                 Thread.Sleep(5000);
-                                Chance -= 1;  // <<아직구현 x
+                                Chance -= 1;  
                                 StartPlayer();
                             }
                             break;
@@ -526,13 +482,64 @@ namespace G_project3
                 WriteLine("축하합니다! 합격입니다.");
                 WriteLine(" ");
                 Thread.Sleep(1000);
-                WriteLine("당신은 우영우 변호사보다 기억력이 좋은 대형로펌의 변호사가 되었습니다.");
-                //게임종료 아직구현 x
-                Thread.Sleep(5000);
-                StartPlayer();
+                WriteLine("당신은 우영우 변호사보다 기억력이 좋은 대형로펌의 변호사가 되었습니다.");               
+                Thread.Sleep(1000);
+                return;
+                
 
             }
 
+        }
+        static void Lucky()
+        {
+            WriteLine("[로또] 1~5까지 행운을 뽑으시오.");
+
+            int Luck = 0;
+            Luck = int.Parse(ReadLine());
+
+            Random random = new Random();
+            int RandLuck = random.Next(1, 2);           
+
+            while (Luck != 1 & Luck != 2 & Luck != 3 & Luck != 4 & Luck != 5) //예외처리
+            {
+                WriteLine("다시 뽑아주세요.");
+                Thread.Sleep(2000);
+                Lucky();
+            }
+
+            LuckColor(); // <<0.2초마다 바뀌는 색상 , 바뀌는 도중에 코드 실행을 하고 싶었으나, 구현x
+
+            Clear();
+            Console.BackgroundColor = ConsoleColor.White;
+            Clear();
+            ForegroundColor = ConsoleColor.Black;
+            Clear();
+
+            Thread.Sleep(1500);
+
+
+            if (Luck == RandLuck)
+            {
+                Console.BackgroundColor = ConsoleColor.Yellow;
+                Clear();
+                ForegroundColor = ConsoleColor.Black;
+
+                WriteLine("[당첨] 로또에 당첨되어 20억을 받고 돈많은 백수가 되었습니다!");
+                Thread.Sleep(2000);
+                return;
+            }
+            else if (Luck != RandLuck)
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Clear();
+                ForegroundColor = ConsoleColor.Yellow;
+                WriteLine("아쉽지만, 다음기회에...");
+                Chance -= 1;
+                Thread.Sleep(2000);
+                StartPlayer();
+            }
+            return;
+           
         }
         static void LuckColor()
         {
@@ -550,8 +557,7 @@ namespace G_project3
 
         }
 
-    } //https://blog.naver.com/pmw9440/221885672100
-      // 벨로그,727207e
+    }
 
 }
 
