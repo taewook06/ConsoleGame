@@ -231,7 +231,7 @@ namespace G_project3
                             Console.BackgroundColor = ConsoleColor.Red;
                             Clear();
                             ForegroundColor = ConsoleColor.Black;
-                            WriteLine($"아쉽지만, {MathPoint}으로 불합격입니다.");
+                            WriteLine($"아쉽지만, {MathPoint}점으로 불합격입니다.");
                             Thread.Sleep(5000);
 
                             // Chance -= 1; << 여기서는 애초에 Chance가 없어서 더 안되는...
