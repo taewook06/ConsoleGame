@@ -27,9 +27,7 @@ namespace G_project1
 
         static void Main(string[] args)
         {
-            int timerTime = 10;
-
-            theThreadTimer(timerTime);
+            
 
             Console.SetWindowSize(150, 40);
 
@@ -172,7 +170,7 @@ namespace G_project1
             Write("                                                                                                    입력1: ");
             float f1 = 0;
             f1 = float.Parse(ReadLine());
-            if (isTimeOut == true)
+            if (isTimeOut == true) //시간이 다됐는지 체크
             {
                 return userAnswerList;
             }
