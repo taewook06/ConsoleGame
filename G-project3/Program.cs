@@ -267,6 +267,7 @@ namespace G_project3
                             WriteLine(" ");
                             Thread.Sleep(1000);
                             WriteLine("당신은 피타고라스보다 덧셈,뺄셈을 잘하는 성공한 수학교사가 됐습니다."); // << 게임종료 아직구현 x
+                            return;
                         }
                         else if (MathPoint < 6)
                         {
@@ -301,6 +302,7 @@ namespace G_project3
                     Random random = new Random();
                     int C = random.Next(1, 9);
 
+                    ConsoleKeyInfo kkkk;
 
 
                     switch (C)
@@ -308,14 +310,14 @@ namespace G_project3
 
                         case 1:
                             WriteLine("▲");     //C에 만약 1인 담긴다면, ▲가 출력되고, 플레이어가 UpArrow키를 누르면 1점획득
-                            ConsoleKeyInfo key1 = Console.ReadKey(true); //실패코드
-                            switch (key1.Key)
+                            kkkk = Console.ReadKey(true); //실패코드
+                            if(kkkk.Key == ConsoleKey.UpArrow)
                             {
-                                case ConsoleKey.UpArrow:
-                                    SpeedPoint += 1;
-                                    break;
+                                SpeedPoint += 1;
                             }
                             break;
+
+
                         case 2:
                             WriteLine("▼");
                             ConsoleKeyInfo key2 = Console.ReadKey(true); //실패코드
@@ -399,6 +401,7 @@ namespace G_project3
                             WriteLine(" ");
                             Thread.Sleep(1000);
                             WriteLine("당신은 페이커보다 반응속도가 좋은 프로게이머가 됐습니다.");
+                            
                             //게임종료 아직구현 x
                         }
                         else if (SpeedPoint < 60)
