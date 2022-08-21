@@ -159,7 +159,7 @@ namespace G_project3
                     Random random = new Random();
                     int RandLuck = random.Next(1, 11);
 
-                    LuckColor(); // <<0.3초마다 바뀌는 색상 , 바뀌는 도중에 코드 실행을 하고 싶었으나, 오류
+                    LuckColor(); // <<0.3초마다 바뀌는 색상 , 바뀌는 도중에 코드 실행을 하고 싶었으나, 구현x
 
                     
                     Console.BackgroundColor = ConsoleColor.White;
@@ -181,7 +181,7 @@ namespace G_project3
                     Clear();
                     ForegroundColor = ConsoleColor.Yellow;
                     WriteLine("아쉽지만, 다음기회에...");
-                    //Chance -= 1;    <<왜 기회가 줄지 않지? 아직구현 x
+                    //Chance -= 1;    << 기회가 줄지않음 구현 x
                     Thread.Sleep(2000);
                     StartPlayer();
                     break;
@@ -302,7 +302,6 @@ namespace G_project3
 
                         case 1:
                             WriteLine("▲");     //C에 만약 1인 담긴다면, ▲가 출력되고, 플레이어가 UpArrow키를 누르면 1점획득
-
                             ConsoleKeyInfo key1 = Console.ReadKey(true); //실패코드
                             switch (key1.Key)
                             {
@@ -458,7 +457,7 @@ namespace G_project3
                             {
                                 Console.BackgroundColor = ConsoleColor.Red;
                                 Clear();
-                                ForegroundColor = ConsoleColor.DarkYellow;
+                                ForegroundColor = ConsoleColor.Black;
                                 WriteLine(" ");
                                 WriteLine("아쉽지만, 다음기회에...");
                                 Thread.Sleep(5000);
@@ -479,7 +478,7 @@ namespace G_project3
                             {
                                 Console.BackgroundColor = ConsoleColor.Red;
                                 Clear();
-                                ForegroundColor = ConsoleColor.DarkYellow;
+                                ForegroundColor = ConsoleColor.Black;
                                 WriteLine(" ");
                                 WriteLine("아쉽지만, 다음기회에...");
                                 Thread.Sleep(5000);
@@ -500,7 +499,7 @@ namespace G_project3
                             {
                                 Console.BackgroundColor = ConsoleColor.Red;
                                 Clear();
-                                ForegroundColor = ConsoleColor.DarkYellow;
+                                ForegroundColor = ConsoleColor.Black;
                                 WriteLine(" ");
                                 WriteLine("아쉽지만, 다음기회에...");
                                 Thread.Sleep(5000);
