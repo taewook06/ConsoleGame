@@ -74,6 +74,7 @@ namespace G_project3
 
             if (Chance == 0)  //지원서가 0장이면 지원을 못하므로 게임 패배.
             {
+                Clear();
                 Console.BackgroundColor = ConsoleColor.White;
                 Clear();
                 ForegroundColor = ConsoleColor.Red;
