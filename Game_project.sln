@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Get a Job", "Get a Job\Get a Job.csproj", "{284C828D-546B-4C9A-9840-3091750492B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart_Parao", "Smart_Parao\Smart_Parao.csproj", "{9E6E6C9E-2F1C-427C-8C0D-DAC08877DBEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card", "Card\Card.csproj", "{61B0912C-04F2-40FD-B459-BB0965EEB1CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{284C828D-546B-4C9A-9840-3091750492B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{284C828D-546B-4C9A-9840-3091750492B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{284C828D-546B-4C9A-9840-3091750492B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{284C828D-546B-4C9A-9840-3091750492B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E6E6C9E-2F1C-427C-8C0D-DAC08877DBEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E6E6C9E-2F1C-427C-8C0D-DAC08877DBEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E6E6C9E-2F1C-427C-8C0D-DAC08877DBEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E6E6C9E-2F1C-427C-8C0D-DAC08877DBEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61B0912C-04F2-40FD-B459-BB0965EEB1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61B0912C-04F2-40FD-B459-BB0965EEB1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61B0912C-04F2-40FD-B459-BB0965EEB1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61B0912C-04F2-40FD-B459-BB0965EEB1CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {74723A77-DA7C-49AF-BB5A-6BDE24B66595}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+C:\Users\happy\Desktop\Game-project\Smart_Parao\bin\Debug\netcoreapp3.1\Smart_Parao.exe
+C:\Users\happy\Desktop\Game-project\Smart_Parao\bin\Debug\netcoreapp3.1\Smart_Parao.deps.json
+C:\Users\happy\Desktop\Game-project\Smart_Parao\bin\Debug\netcoreapp3.1\Smart_Parao.runtimeconfig.json
+C:\Users\happy\Desktop\Game-project\Smart_Parao\bin\Debug\netcoreapp3.1\Smart_Parao.runtimeconfig.dev.json
+C:\Users\happy\Desktop\Game-project\Smart_Parao\bin\Debug\netcoreapp3.1\Smart_Parao.dll
+C:\Users\happy\Desktop\Game-project\Smart_Parao\bin\Debug\netcoreapp3.1\Smart_Parao.pdb
+C:\Users\happy\Desktop\Game-project\Smart_Parao\obj\Debug\netcoreapp3.1\Smart_Parao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\happy\Desktop\Game-project\Smart_Parao\obj\Debug\netcoreapp3.1\Smart_Parao.AssemblyInfoInputs.cache
+C:\Users\happy\Desktop\Game-project\Smart_Parao\obj\Debug\netcoreapp3.1\Smart_Parao.AssemblyInfo.cs
+C:\Users\happy\Desktop\Game-project\Smart_Parao\obj\Debug\netcoreapp3.1\Smart_Parao.csproj.CoreCompileInputs.cache
+C:\Users\happy\Desktop\Game-project\Smart_Parao\obj\Debug\netcoreapp3.1\Smart_Parao.dll
+C:\Users\happy\Desktop\Game-project\Smart_Parao\obj\Debug\netcoreapp3.1\Smart_Parao.pdb
+C:\Users\happy\Desktop\Game-project\Smart_Parao\obj\Debug\netcoreapp3.1\Smart_Parao.genruntimeconfig.cache
