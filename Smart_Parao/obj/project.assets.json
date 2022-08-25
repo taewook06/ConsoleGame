@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\happy\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\happy\\Desktop\\Twook_Game\\Smart_Parao\\Smart_Parao.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Twook_Game\\Smart_Parao\\Smart_Parao.csproj",
       "projectName": "Smart_Parao",
-      "projectPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Smart_Parao\\Smart_Parao.csproj",
-      "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Smart_Parao\\obj\\",
+      "projectPath": "C:\\Users\\User\\Desktop\\Twook_Game\\Smart_Parao\\Smart_Parao.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Twook_Game\\Smart_Parao\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\happy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
       }
     }
   }

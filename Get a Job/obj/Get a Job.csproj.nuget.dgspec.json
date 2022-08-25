@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\happy\\Desktop\\Twook_Game\\Get a Job\\Get a Job.csproj": {}
+    "C:\\Users\\User\\Desktop\\Twook_Game\\Get a Job\\Get a Job.csproj": {}
   },
   "projects": {
-    "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\Card.csproj": {
+    "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\Card.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\Card.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\Card.csproj",
         "projectName": "Card",
-        "projectPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\Card.csproj",
-        "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\Card.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\happy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\happy\\Desktop\\Twook_Game\\Get a Job\\Get a Job.csproj": {
+    "C:\\Users\\User\\Desktop\\Twook_Game\\Get a Job\\Get a Job.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\happy\\Desktop\\Twook_Game\\Get a Job\\Get a Job.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Twook_Game\\Get a Job\\Get a Job.csproj",
         "projectName": "Get a Job",
-        "projectPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Get a Job\\Get a Job.csproj",
-        "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Get a Job\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\Twook_Game\\Get a Job\\Get a Job.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Twook_Game\\Get a Job\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\happy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\Card.csproj": {
-                "projectPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\Card.csproj"
+              "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\Card.csproj": {
+                "projectPath": "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\Card.csproj"
               }
             }
           }
@@ -112,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.411\\RuntimeIdentifierGraph.json"
         }
       }
     }
