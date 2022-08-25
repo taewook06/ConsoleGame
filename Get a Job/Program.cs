@@ -555,7 +555,7 @@ namespace Get_a_Job
                     Console.Clear();
 
                     Console.BackgroundColor = Color[Rand.Next(6)]; //0~5까지의 랜덤한 색상으로 배경색변경
-                    Thread.Sleep(200); //0.2초대기
+                    Thread.Sleep(200); //0.2초대기.
                 }
 
             }
