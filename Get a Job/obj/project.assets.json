@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Card/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Card.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Card.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Card/1.0.0": {
+      "type": "project",
+      "path": "../Card/Card.csproj",
+      "msbuildProject": "../Card/Card.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Card >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\happy\\.nuget\\packages\\": {}
@@ -13,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\happy\\Desktop\\Game-project\\Get a Job\\Get a Job.csproj",
+      "projectUniqueName": "C:\\Users\\happy\\Desktop\\Twook_Game\\Get a Job\\Get a Job.csproj",
       "projectName": "Get a Job",
-      "projectPath": "C:\\Users\\happy\\Desktop\\Game-project\\Get a Job\\Get a Job.csproj",
+      "projectPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Get a Job\\Get a Job.csproj",
       "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\happy\\Desktop\\Game-project\\Get a Job\\obj\\",
+      "outputPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Get a Job\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\happy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -33,7 +52,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\Card.csproj": {
+              "projectPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\Card.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

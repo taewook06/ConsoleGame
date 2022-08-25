@@ -6,4 +6,8 @@
     <RootNamespace>Get_a_Job</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Card\Card.csproj" />
+  </ItemGroup>
+
 </Project>

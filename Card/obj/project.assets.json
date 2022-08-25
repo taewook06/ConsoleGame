@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\happy\\Desktop\\Game-project\\Card\\Card.csproj",
+      "projectUniqueName": "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\Card.csproj",
       "projectName": "Card",
-      "projectPath": "C:\\Users\\happy\\Desktop\\Game-project\\Card\\Card.csproj",
+      "projectPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\Card.csproj",
       "packagesPath": "C:\\Users\\happy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\happy\\Desktop\\Game-project\\Card\\obj\\",
+      "outputPath": "C:\\Users\\happy\\Desktop\\Twook_Game\\Card\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\happy\\AppData\\Roaming\\NuGet\\NuGet.Config",
