@@ -535,7 +535,7 @@ namespace Get_a_Job
                 {
                     Console.BackgroundColor = ConsoleColor.Red;
                     Clear();
-                    ForegroundColor = ConsoleColor.Yellow
+                ForegroundColor = ConsoleColor.Yellow;
                     WriteLine("아쉽지만, 다음기회에...");
                     Chance -= 1;
                     Thread.Sleep(2000);

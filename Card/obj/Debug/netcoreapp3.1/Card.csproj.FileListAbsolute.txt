@@ -1,0 +1,14 @@
+C:\Users\User\Desktop\C#\Twook_Game\Card\bin\Debug\netcoreapp3.1\Card.exe
+C:\Users\User\Desktop\C#\Twook_Game\Card\bin\Debug\netcoreapp3.1\Card.deps.json
+C:\Users\User\Desktop\C#\Twook_Game\Card\bin\Debug\netcoreapp3.1\Card.runtimeconfig.json
+C:\Users\User\Desktop\C#\Twook_Game\Card\bin\Debug\netcoreapp3.1\Card.runtimeconfig.dev.json
+C:\Users\User\Desktop\C#\Twook_Game\Card\bin\Debug\netcoreapp3.1\Card.dll
+C:\Users\User\Desktop\C#\Twook_Game\Card\bin\Debug\netcoreapp3.1\Card.pdb
+C:\Users\User\Desktop\C#\Twook_Game\Card\obj\Debug\netcoreapp3.1\Card.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\C#\Twook_Game\Card\obj\Debug\netcoreapp3.1\Card.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\C#\Twook_Game\Card\obj\Debug\netcoreapp3.1\Card.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\C#\Twook_Game\Card\obj\Debug\netcoreapp3.1\Card.AssemblyInfo.cs
+C:\Users\User\Desktop\C#\Twook_Game\Card\obj\Debug\netcoreapp3.1\Card.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\C#\Twook_Game\Card\obj\Debug\netcoreapp3.1\Card.dll
+C:\Users\User\Desktop\C#\Twook_Game\Card\obj\Debug\netcoreapp3.1\Card.pdb
+C:\Users\User\Desktop\C#\Twook_Game\Card\obj\Debug\netcoreapp3.1\Card.genruntimeconfig.cache

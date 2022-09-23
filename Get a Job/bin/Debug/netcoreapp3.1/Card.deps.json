@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Get a Job/1.0.0": {
-        "dependencies": {
-          "Card": "1.0.0"
-        },
-        "runtime": {
-          "Get a Job.dll": {}
-        }
-      },
       "Card/1.0.0": {
         "runtime": {
           "Card.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "Get a Job/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Card/1.0.0": {
       "type": "project",
       "serviceable": false,

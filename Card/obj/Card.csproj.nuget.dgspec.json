@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\Card.csproj": {}
+    "C:\\Users\\User\\Desktop\\C#\\Twook_Game\\Card\\Card.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\Card.csproj": {
+    "C:\\Users\\User\\Desktop\\C#\\Twook_Game\\Card\\Card.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\Card.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\C#\\Twook_Game\\Card\\Card.csproj",
         "projectName": "Card",
-        "projectPath": "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\Card.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\C#\\Twook_Game\\Card\\Card.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Twook_Game\\Card\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\C#\\Twook_Game\\Card\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
